@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="Contacts" syncable="YES">
+        <attribute name="contactid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sort" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Phone" representedClassName="Phone" syncable="YES">
+        <attribute name="chatappid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hide_lastseen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hide_photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hide_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isblocked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isfavorite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sorting" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Phone" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="Contacts" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
+</model>

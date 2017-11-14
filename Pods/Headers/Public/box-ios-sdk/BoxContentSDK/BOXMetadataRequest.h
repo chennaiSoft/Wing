@@ -1,0 +1,1 @@
+../../../../box-ios-sdk/BoxContentSDK/BoxContentSDK/Requests/BOXMetadataRequest.h

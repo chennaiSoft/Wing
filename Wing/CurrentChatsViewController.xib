@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentChatsViewController">
+            <connections>
+                <outlet property="addButton" destination="WXQ-KO-WOa" id="ax9-ce-qyJ"/>
+                <outlet property="btnChats" destination="6i6-c5-Hq8" id="Jfi-fH-eg2"/>
+                <outlet property="btnContact" destination="j3H-jp-znG" id="KfN-Xj-4fu"/>
+                <outlet property="btnGroups" destination="0VC-Mc-VcQ" id="geK-7J-xFx"/>
+                <outlet property="cancelButton" destination="SC9-pa-XUK" id="ilx-ar-PPs"/>
+                <outlet property="searchDisplayController" destination="TpZ-Dg-61q" id="Xjb-dH-vfI"/>
+                <outlet property="segmentControl" destination="3iT-re-2Mi" id="FRQ-Sp-6zl"/>
+                <outlet property="sendButton" destination="pVf-nv-qO6" id="2Og-QY-yxw"/>
+                <outlet property="tableViewList" destination="LHx-nz-a26" id="lrz-Se-V1z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LHx-nz-a26">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="530"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="GZg-xS-8h7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="vDS-aH-jvo"/>
+                        </connections>
+                    </searchBar>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VGc-4j-WT2"/>
+                        <outlet property="delegate" destination="-1" id="GYG-wr-CiW"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" id="1pb-Bz-Vt1">
+                    <rect key="frame" x="0.0" y="530" width="320" height="38"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6i6-c5-Hq8">
+                            <rect key="frame" x="68" y="8" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="contact_2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j3H-jp-znG">
+                            <rect key="frame" x="149" y="2" width="22" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="wing_1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0VC-Mc-VcQ">
+                            <rect key="frame" x="234" y="0.0" width="27" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="group_wing_2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikc-AH-YxV">
+                            <rect key="frame" x="43" y="-2" width="62" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionOptionSelect:" destination="-1" eventType="touchUpInside" id="kYI-7i-yiD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HsK-Tj-jtR">
+                            <rect key="frame" x="114" y="0.0" width="75" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionOptionSelect:" destination="-1" eventType="touchUpInside" id="XFC-Hs-Z4M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M5x-ZH-9is">
+                            <rect key="frame" x="197" y="-2" width="75" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionOptionSelect:" destination="-1" eventType="touchUpInside" id="Wps-4I-MtK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372555489999996" green="0.91372555489999996" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </view>
+        <barButtonItem title="Cancel" style="done" id="SC9-pa-XUK" userLabel="CancelButton">
+            <connections>
+                <action selector="actionCancel:" destination="-1" id="Zr4-1H-4uZ"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem systemItem="add" id="WXQ-KO-WOa" userLabel="AddButton">
+            <connections>
+                <action selector="actionAdd:" destination="-1" id="hCL-ER-Hi5"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem title="Send" id="pVf-nv-qO6" userLabel="AddButton">
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <action selector="actionSend" destination="-1" id="6wi-dc-Jex"/>
+            </connections>
+        </barButtonItem>
+        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" id="3iT-re-2Mi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <segments>
+                <segment title="Chats"/>
+                <segment title="Groups"/>
+                <segment title="Contacts"/>
+            </segments>
+            <connections>
+                <action selector="actionSegmentTouch:" destination="-1" eventType="valueChanged" id="DqG-By-MeI"/>
+            </connections>
+        </segmentedControl>
+        <searchDisplayController id="TpZ-Dg-61q">
+            <connections>
+                <outlet property="delegate" destination="-1" id="dBv-Hb-aTR"/>
+                <outlet property="searchBar" destination="GZg-xS-8h7" id="U7H-jK-dVG"/>
+                <outlet property="searchContentsController" destination="-1" id="bEq-jy-KFL"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="kVl-4p-Wdo"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="WNG-Dq-4qx"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="contact_2.png" width="30" height="30"/>
+        <image name="group_wing_2.png" width="36" height="48"/>
+        <image name="wing_1.png" width="30" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

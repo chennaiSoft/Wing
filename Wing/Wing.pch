@@ -1,0 +1,54 @@
+//
+//  Wing.pch
+//  Wing
+//
+//  Created by CSCS on 1/7/16.
+//  Copyright © 2016 CSCS. All rights reserved.
+//
+
+#ifndef Wing_pch
+#define Wing_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <CoreData/CoreData.h>
+
+//#import "LoginViewController.h"
+//#import "VerifyViewController.h"
+//#import "NickNameViewController.h"
+//#import "SettingsViewController.h"
+//#import "ContactsViewController.h"
+#import "Constants.h"
+#import "XMPPConnect.h"
+#import "AddressBookContacts.h"
+#import "MessgaeTypeConstant.h"
+#import "Utilities.h"
+//#import "FavoritesViewController.h"
+//#import "YouTubeViewController.h"
+//#import "StartViewController.h"
+//#import "SetVisibilityViewController.h"
+#import "ContactDb.h"
+//#import "SplashViewController.h"
+#import "WebService.h"
+//#import "ChatMainViewControllerNew.h"
+//#import "GroupProfileViewController.h"
+//
+//#import "CountryViewController.h"
+#import "ASIFormDataRequest.h"
+//#import "submitProfile.h"
+//
+//#import "UIImage+Resize.h"
+//#import "UIImage+RoundedCorner.h"
+//#import "UIImageView+AFNetworking.h"
+//
+//#import "PersonChooseViewController.h"
+//#import "ProfileViewController.h"
+//
+//#import "CurrentChatsViewController.h"
+//#import "UIImageView+Letters.h"
+//#import "ProfilePhotoViewController.h"
+//
+//#import <FBSDKShareKit/FBSDKShareKit.h>
+//#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#endif /* Wing_pch */

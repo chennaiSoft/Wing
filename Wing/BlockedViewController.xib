@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockedViewController">
+            <connections>
+                <outlet property="addBtn" destination="8Xw-kQ-Mhx" id="Pul-P0-7fm"/>
+                <outlet property="cancelBtn" destination="26O-zX-pCc" id="qiU-W3-4dL"/>
+                <outlet property="deleteBtn" destination="rVK-bh-3XW" id="jMv-tc-RfW"/>
+                <outlet property="editBtn" destination="gEI-nN-KRm" id="X3k-uz-Jhg"/>
+                <outlet property="searchDisplayController" destination="86X-ci-7em" id="33s-t6-FQI"/>
+                <outlet property="tableViewList" destination="XHL-Wd-W0n" id="KvL-VP-0sa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XHL-Wd-W0n">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="aul-le-WIf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="6fR-4y-hSW"/>
+                        </connections>
+                    </searchBar>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="i4F-VP-Cgk"/>
+                        <outlet property="delegate" destination="-1" id="eBQ-ZB-cBc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <barButtonItem systemItem="add" id="8Xw-kQ-Mhx">
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <action selector="actionAdd" destination="-1" id="fcH-4f-XQV"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem systemItem="edit" id="gEI-nN-KRm">
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <action selector="actionEdit" destination="-1" id="eK7-CU-Mu7"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem title="Delete" id="rVK-bh-3XW">
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <action selector="actionDelete" destination="-1" id="7DX-0F-O3h"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem systemItem="cancel" id="26O-zX-pCc">
+            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+            <connections>
+                <action selector="actionCancel" destination="-1" id="0pR-fl-eLQ"/>
+            </connections>
+        </barButtonItem>
+        <searchDisplayController id="86X-ci-7em">
+            <connections>
+                <outlet property="delegate" destination="-1" id="wFP-ba-HEx"/>
+                <outlet property="searchBar" destination="aul-le-WIf" id="cEX-IY-IdH"/>
+                <outlet property="searchContentsController" destination="-1" id="WS1-UY-edc"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="A0Z-dd-G0r"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="fkE-Tx-GvH"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

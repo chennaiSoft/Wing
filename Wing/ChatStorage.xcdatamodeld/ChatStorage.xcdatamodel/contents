@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="ChatSession" representedClassName="ChatSession" syncable="YES">
+        <attribute name="displayname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromjid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isgroupchat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messagetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sentdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupMembers" syncable="YES">
+        <attribute name="group_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="member_jid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="member_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="member_nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Groups" representedClassName="Groups" syncable="YES">
+        <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="group_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner_jid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sorting" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="datestring" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="deliver" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliverydate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="displayname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="file_ext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromjid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isgroupchat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jsonvalues" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="localid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messagetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduled_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sentdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serverid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tojid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferstatus" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PasscodeEntry" syncable="YES">
+        <attribute name="chatsession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passcode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Youtube" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="published" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seconds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YoutubeShare" representedClassName="YoutubeShare" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="published" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seconds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ChatSession" positionX="-36" positionY="9" width="128" height="165"/>
+        <element name="GroupMembers" positionX="18" positionY="63" width="128" height="150"/>
+        <element name="Groups" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Message" positionX="36" positionY="81" width="128" height="375"/>
+        <element name="PasscodeEntry" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Youtube" positionX="-18" positionY="27" width="128" height="165"/>
+        <element name="YoutubeShare" positionX="0" positionY="45" width="128" height="180"/>
+    </elements>
+</model>

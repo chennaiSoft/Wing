@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--BackupVC-->
+        <scene sceneID="5Oh-TN-xrK">
+            <objects>
+                <viewController storyboardIdentifier="BackupVC" id="uLL-ut-ujM" customClass="BackupVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eCI-vG-svE"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJ8-0d-g6B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bK-xH-2of">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z00-vH-S11">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back up your chat history to Dropbox. You can restore your chat history when you reinstall Wing App." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mex-vt-0Rl">
+                                        <rect key="frame" x="10" y="10" width="300" height="84"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.1437859786" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95320209703947367" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Mex-vt-0Rl" firstAttribute="leading" secondItem="Z00-vH-S11" secondAttribute="leading" constant="10" id="3Gx-Fm-vWf"/>
+                                    <constraint firstAttribute="height" constant="114" id="bab-LU-wDP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mex-vt-0Rl" secondAttribute="bottom" constant="20" id="les-kx-jBi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mex-vt-0Rl" secondAttribute="trailing" constant="10" id="prR-AQ-PKs"/>
+                                    <constraint firstItem="Mex-vt-0Rl" firstAttribute="top" secondItem="Z00-vH-S11" secondAttribute="top" constant="10" id="rRg-qO-83u"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="614-JP-hTQ">
+                                <rect key="frame" x="0.0" y="142" width="320" height="178"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="R8B-BF-rMH"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" id="V4j-tb-Vwd" customClass="BackupCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V4j-tb-Vwd" id="nIe-WK-V9X">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auto Backup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAD-no-VeK">
+                                                    <rect key="frame" x="10" y="11" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.16532175164473686" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79S-vs-TmH">
+                                                    <rect key="frame" x="182" y="11" width="92" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.16532175160000001" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="autobackUpSelecLabel" destination="79S-vs-TmH" id="4Ga-u9-vBM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" id="7nK-Qo-1wk" customClass="BackupCell">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7nK-Qo-1wk" id="U8N-g0-D6u">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Backup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-U3-I91">
+                                                    <rect key="frame" x="10" y="12" width="131" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.16532175160000001" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hML-Lr-los">
+                                                    <rect key="frame" x="290" y="12" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelBackup" destination="dIM-U3-I91" id="fYu-2K-t2e"/>
+                                            <outlet property="loadingIndicator" destination="hML-Lr-los" id="NyJ-Td-kJb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uLL-ut-ujM" id="HRZ-NC-xQt"/>
+                                    <outlet property="delegate" destination="uLL-ut-ujM" id="Sd8-Kv-dFl"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awy-7m-19R">
+                                <rect key="frame" x="10" y="359" width="300" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="6hg-w7-QLO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.36862745099999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="614-JP-hTQ" secondAttribute="trailing" constant="-16" id="2M6-Ov-TtC"/>
+                            <constraint firstItem="awy-7m-19R" firstAttribute="top" secondItem="614-JP-hTQ" secondAttribute="bottom" constant="39" id="B6u-3Y-GQg"/>
+                            <constraint firstItem="Z00-vH-S11" firstAttribute="leading" secondItem="8bK-xH-2of" secondAttribute="leadingMargin" constant="-16" id="BNz-X1-Jt9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z00-vH-S11" secondAttribute="trailing" constant="-16" id="Cb4-K0-mcW"/>
+                            <constraint firstItem="awy-7m-19R" firstAttribute="leading" secondItem="8bK-xH-2of" secondAttribute="leadingMargin" constant="-6" id="JYA-Is-iLd"/>
+                            <constraint firstItem="614-JP-hTQ" firstAttribute="leading" secondItem="8bK-xH-2of" secondAttribute="leadingMargin" constant="-16" id="KD9-m7-Oma"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="awy-7m-19R" secondAttribute="trailing" constant="-6" id="QA8-pq-WeK"/>
+                            <constraint firstItem="614-JP-hTQ" firstAttribute="top" secondItem="Z00-vH-S11" secondAttribute="bottom" constant="28" id="XOl-L3-acy"/>
+                            <constraint firstItem="Z00-vH-S11" firstAttribute="top" secondItem="8bK-xH-2of" secondAttribute="topMargin" id="jJv-rE-MNz"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="labelStatusUpdate" destination="awy-7m-19R" id="wED-XE-716"/>
+                        <outlet property="tableViewMenu" destination="614-JP-hTQ" id="esa-Nd-bik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXs-VN-UWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="73"/>
+        </scene>
+    </scenes>
+</document>

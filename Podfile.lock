@@ -1,0 +1,268 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - box-ios-sdk (1.0.11):
+    - box-ios-sdk/logger (= 1.0.11)
+    - box-ios-sdk/no-arc (= 1.0.11)
+  - box-ios-sdk/logger (1.0.11)
+  - box-ios-sdk/no-arc (1.0.11):
+    - box-ios-sdk/logger
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - CTAssetsPickerController (3.3.1):
+    - PureLayout (~> 3.0.0)
+  - Digits (2.4.0):
+    - TwitterCore (= 2.4.0)
+  - Fabric (1.6.8)
+  - LBYouTubeView (0.0.1)
+  - libPhoneNumber-iOS (0.8.16)
+  - Masonry (1.0.1)
+  - MGSwipeTableCell (1.5.5)
+  - MHVideoPhotoGallery (2.1.3):
+    - Masonry
+    - SDWebImage
+    - TTTAttributedLabel (= 1.13.3)
+  - MSNavigationPaneViewController (0.2.0):
+    - PRTween (~> 0.0.1)
+  - NSDate-Time-Ago (1.0.1)
+  - PRTween (0.0.1)
+  - PureLayout (3.0.2)
+  - Reachability (3.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SSKeychain (1.4.1)
+  - SSZipArchive (1.5)
+  - SVProgressHUD (2.0.3)
+  - TTTAttributedLabel (1.13.3)
+  - TwitterCore (2.4.0):
+    - Fabric
+  - XMPPFramework (3.6.6):
+    - XMPPFramework/Authentication (= 3.6.6)
+    - XMPPFramework/BandwidthMonitor (= 3.6.6)
+    - XMPPFramework/Categories (= 3.6.6)
+    - XMPPFramework/Core (= 3.6.6)
+    - XMPPFramework/CoreDataStorage (= 3.6.6)
+    - XMPPFramework/GoogleSharedStatus (= 3.6.6)
+    - XMPPFramework/KissXML (= 3.6.6)
+    - XMPPFramework/ProcessOne (= 3.6.6)
+    - XMPPFramework/Reconnect (= 3.6.6)
+    - XMPPFramework/Roster (= 3.6.6)
+    - XMPPFramework/SystemInputActivityMonitor (= 3.6.6)
+    - XMPPFramework/Utilities (= 3.6.6)
+    - XMPPFramework/XEP-0009 (= 3.6.6)
+    - XMPPFramework/XEP-0012 (= 3.6.6)
+    - XMPPFramework/XEP-0016 (= 3.6.6)
+    - XMPPFramework/XEP-0045 (= 3.6.6)
+    - XMPPFramework/XEP-0054 (= 3.6.6)
+    - XMPPFramework/XEP-0059 (= 3.6.6)
+    - XMPPFramework/XEP-0060 (= 3.6.6)
+    - XMPPFramework/XEP-0065 (= 3.6.6)
+    - XMPPFramework/XEP-0066 (= 3.6.6)
+    - XMPPFramework/XEP-0082 (= 3.6.6)
+    - XMPPFramework/XEP-0085 (= 3.6.6)
+    - XMPPFramework/XEP-0092 (= 3.6.6)
+    - XMPPFramework/XEP-0100 (= 3.6.6)
+    - XMPPFramework/XEP-0106 (= 3.6.6)
+    - XMPPFramework/XEP-0115 (= 3.6.6)
+    - XMPPFramework/XEP-0136 (= 3.6.6)
+    - XMPPFramework/XEP-0153 (= 3.6.6)
+    - XMPPFramework/XEP-0172 (= 3.6.6)
+    - XMPPFramework/XEP-0184 (= 3.6.6)
+    - XMPPFramework/XEP-0191 (= 3.6.6)
+    - XMPPFramework/XEP-0198 (= 3.6.6)
+    - XMPPFramework/XEP-0199 (= 3.6.6)
+    - XMPPFramework/XEP-0202 (= 3.6.6)
+    - XMPPFramework/XEP-0203 (= 3.6.6)
+    - XMPPFramework/XEP-0223 (= 3.6.6)
+    - XMPPFramework/XEP-0224 (= 3.6.6)
+    - XMPPFramework/XEP-0280 (= 3.6.6)
+    - XMPPFramework/XEP-0297 (= 3.6.6)
+    - XMPPFramework/XEP-0308 (= 3.6.6)
+    - XMPPFramework/XEP-0333 (= 3.6.6)
+    - XMPPFramework/XEP-0335 (= 3.6.6)
+  - XMPPFramework/Authentication (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/BandwidthMonitor (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/Categories (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/Core (3.6.6):
+    - CocoaAsyncSocket (~> 7.4.1)
+    - CocoaLumberjack (~> 1.9)
+    - XMPPFramework/KissXML
+  - XMPPFramework/CoreDataStorage (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/GoogleSharedStatus (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/KissXML (3.6.6)
+  - XMPPFramework/ProcessOne (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/Reconnect (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/Roster (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/CoreDataStorage
+  - XMPPFramework/SystemInputActivityMonitor (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/Utilities (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0009 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0012 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0016 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0045 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/CoreDataStorage
+    - XMPPFramework/XEP-0203
+  - XMPPFramework/XEP-0054 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/Roster
+  - XMPPFramework/XEP-0059 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0060 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0065 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0066 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0082 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0085 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0092 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0100 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0106 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0115 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/CoreDataStorage
+  - XMPPFramework/XEP-0136 (3.6.6):
+    - XMPPFramework/CoreDataStorage
+    - XMPPFramework/XEP-0085
+    - XMPPFramework/XEP-0203
+  - XMPPFramework/XEP-0153 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/XEP-0054
+  - XMPPFramework/XEP-0172 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0184 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0191 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0198 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0199 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0202 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/XEP-0082
+  - XMPPFramework/XEP-0203 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/XEP-0082
+  - XMPPFramework/XEP-0223 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0224 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0280 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0297 (3.6.6):
+    - XMPPFramework/Core
+    - XMPPFramework/XEP-0203
+  - XMPPFramework/XEP-0308 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0333 (3.6.6):
+    - XMPPFramework/Core
+  - XMPPFramework/XEP-0335 (3.6.6):
+    - XMPPFramework/Core
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - ASIHTTPRequest
+  - box-ios-sdk
+  - CocoaLumberjack (~> 1.9)
+  - CTAssetsPickerController (~> 3.3.0)
+  - Digits
+  - Fabric
+  - LBYouTubeView (~> 0.0)
+  - libPhoneNumber-iOS (~> 0.8)
+  - MGSwipeTableCell
+  - MHVideoPhotoGallery
+  - MSNavigationPaneViewController (~> 0.2)
+  - NSDate-Time-Ago (~> 1.0)
+  - Reachability (~> 3.2)
+  - SSKeychain
+  - SSZipArchive (~> 1.2)
+  - SVProgressHUD
+  - XMPPFramework
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  box-ios-sdk: a34a7c130e83e3d2380d2f6c1f16e589ba7788ba
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  CTAssetsPickerController: b1d1d50ab87cf6b8b13531de5f4530482e7e53ed
+  Digits: 8173fa5420d64bf490bade840e6bc36b74537d6c
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  LBYouTubeView: 45dd4337d791898ab9a052eba0b23143cbd6901a
+  libPhoneNumber-iOS: acb5805f67892db37adc3440290a367923672b51
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+  MHVideoPhotoGallery: aa36cdd9b75c6d5a19b48005cddb9b730c2e27e8
+  MSNavigationPaneViewController: 030c5d9eaf457150215b6d72a566ceb02f008772
+  NSDate-Time-Ago: e9de167d0659ebe465c273e833e7b582f061fc41
+  PRTween: b5f4a594f65f4198eb68e2ef3cf72f3390f037b8
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SSZipArchive: 29daace2bccb90a47de2837744da397728ff9207
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
+  TwitterCore: a139904c80805ad3dde9eef1100704f96f646d1d
+  XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b
+
+PODFILE CHECKSUM: dd965da806433c792abad0709039a1e45d847ee7
+
+COCOAPODS: 1.2.1

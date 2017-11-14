@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduledMessageVC">
+            <connections>
+                <outlet property="bottomDescriptionConstraint" destination="by7-sz-0qS" id="Blr-3p-LZF"/>
+                <outlet property="buttonSchedule" destination="3mv-Ct-9f8" id="Rt3-bh-fbM"/>
+                <outlet property="datePickerSchedule" destination="sfy-It-0UB" id="Bif-o9-Xwm"/>
+                <outlet property="navigationBar" destination="BNz-BB-fBj" id="vYq-Nn-lWG"/>
+                <outlet property="tableViewList" destination="2Yo-aC-8Jt" id="ie9-fs-NnT"/>
+                <outlet property="textViewMessage" destination="jsx-ux-lwv" id="xts-Fw-Ra0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ADd-9X-IF5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1gd-pH-lks">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-wq-CHV" userLabel="View - messages">
+                    <rect key="frame" x="10" y="74" width="300" height="313"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tGI-5e-zBe">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="313"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-aC-8Jt">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="313"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="wUb-oX-9Uu"/>
+                                <outlet property="delegate" destination="-1" id="M7C-vY-gJs"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2Yo-aC-8Jt" secondAttribute="trailing" id="PiD-Mw-lLb"/>
+                        <constraint firstAttribute="bottom" secondItem="2Yo-aC-8Jt" secondAttribute="bottom" id="TyJ-Zn-9Li"/>
+                        <constraint firstAttribute="bottom" secondItem="tGI-5e-zBe" secondAttribute="bottom" id="UBv-jd-w3Z"/>
+                        <constraint firstItem="2Yo-aC-8Jt" firstAttribute="leading" secondItem="aPC-wq-CHV" secondAttribute="leading" id="ZFk-sD-5pN"/>
+                        <constraint firstAttribute="trailing" secondItem="tGI-5e-zBe" secondAttribute="trailing" id="aNA-Ia-4eK"/>
+                        <constraint firstItem="tGI-5e-zBe" firstAttribute="top" secondItem="aPC-wq-CHV" secondAttribute="top" id="b5s-ww-Le9"/>
+                        <constraint firstItem="2Yo-aC-8Jt" firstAttribute="top" secondItem="aPC-wq-CHV" secondAttribute="top" id="clb-XS-3xD"/>
+                        <constraint firstItem="tGI-5e-zBe" firstAttribute="leading" secondItem="aPC-wq-CHV" secondAttribute="leading" id="dZV-hV-f8f"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVP-fZ-hXh">
+                    <rect key="frame" x="10" y="395" width="300" height="110"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEj-gU-QKw">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsx-ux-lwv">
+                            <rect key="frame" x="8" y="8" width="284" height="94"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="uTV-ie-rH9"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jsx-ux-lwv" secondAttribute="trailing" constant="8" id="DiD-lR-wPu"/>
+                        <constraint firstItem="jsx-ux-lwv" firstAttribute="top" secondItem="tVP-fZ-hXh" secondAttribute="top" constant="8" id="IYs-TU-csS"/>
+                        <constraint firstItem="dEj-gU-QKw" firstAttribute="top" secondItem="tVP-fZ-hXh" secondAttribute="top" id="XaS-rN-rJc"/>
+                        <constraint firstItem="dEj-gU-QKw" firstAttribute="leading" secondItem="tVP-fZ-hXh" secondAttribute="leading" id="ZUa-F0-ezI"/>
+                        <constraint firstAttribute="bottom" secondItem="dEj-gU-QKw" secondAttribute="bottom" id="bHM-ei-fcU"/>
+                        <constraint firstAttribute="bottom" secondItem="jsx-ux-lwv" secondAttribute="bottom" constant="8" id="iY2-Z8-NWt"/>
+                        <constraint firstAttribute="height" constant="110" id="ira-Fj-x97"/>
+                        <constraint firstAttribute="trailing" secondItem="dEj-gU-QKw" secondAttribute="trailing" id="jkp-Wb-sCA"/>
+                        <constraint firstItem="jsx-ux-lwv" firstAttribute="leading" secondItem="tVP-fZ-hXh" secondAttribute="leading" constant="8" id="lfP-cs-rMf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gni-vb-fTl" userLabel="View - bottom">
+                    <rect key="frame" x="10" y="514" width="300" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f1j-sp-2W8">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mv-Ct-9f8">
+                            <rect key="frame" x="8" y="8" width="284" height="28"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.72156862745098038" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Schedule">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openScheduling" destination="-1" eventType="touchUpInside" id="g83-C8-qaG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="f1j-sp-2W8" firstAttribute="top" secondItem="gni-vb-fTl" secondAttribute="top" id="0zs-MG-uiH"/>
+                        <constraint firstItem="f1j-sp-2W8" firstAttribute="leading" secondItem="gni-vb-fTl" secondAttribute="leading" id="CvA-T5-9Ef"/>
+                        <constraint firstAttribute="bottom" secondItem="f1j-sp-2W8" secondAttribute="bottom" id="FYr-GL-mR3"/>
+                        <constraint firstAttribute="height" constant="44" id="axF-zP-GfZ"/>
+                        <constraint firstAttribute="trailing" secondItem="f1j-sp-2W8" secondAttribute="trailing" id="iUH-Xi-OPD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aPC-wq-CHV" secondAttribute="trailing" constant="10" id="DgV-Gz-Hbg"/>
+                <constraint firstItem="1gd-pH-lks" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HBw-UA-3PY"/>
+                <constraint firstItem="gni-vb-fTl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Iwh-7H-3QX"/>
+                <constraint firstItem="aPC-wq-CHV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Qp1-VG-3Du"/>
+                <constraint firstAttribute="bottom" secondItem="gni-vb-fTl" secondAttribute="bottom" constant="10" id="by7-sz-0qS"/>
+                <constraint firstItem="1gd-pH-lks" firstAttribute="centerX" secondItem="aPC-wq-CHV" secondAttribute="centerX" id="cRu-UJ-TXI"/>
+                <constraint firstItem="tVP-fZ-hXh" firstAttribute="top" secondItem="aPC-wq-CHV" secondAttribute="bottom" constant="8" id="flJ-pz-buu"/>
+                <constraint firstAttribute="bottom" secondItem="1gd-pH-lks" secondAttribute="bottom" id="gs6-Qh-zdD"/>
+                <constraint firstItem="1gd-pH-lks" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hPG-xC-qYR"/>
+                <constraint firstItem="tVP-fZ-hXh" firstAttribute="top" secondItem="aPC-wq-CHV" secondAttribute="bottom" constant="8" id="nyT-Pb-HOP"/>
+                <constraint firstItem="gni-vb-fTl" firstAttribute="top" secondItem="tVP-fZ-hXh" secondAttribute="bottom" constant="9" id="r1A-eq-dTE"/>
+                <constraint firstItem="tVP-fZ-hXh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="tvL-MV-6ac"/>
+                <constraint firstAttribute="trailing" secondItem="gni-vb-fTl" secondAttribute="trailing" constant="10" id="u0M-ao-PT9"/>
+                <constraint firstAttribute="trailing" secondItem="tVP-fZ-hXh" secondAttribute="trailing" constant="10" id="z2A-2U-eXs"/>
+                <constraint firstItem="1gd-pH-lks" firstAttribute="top" secondItem="aPC-wq-CHV" secondAttribute="top" constant="-74" id="znv-es-TqI"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="202" y="-96"/>
+        </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BNz-BB-fBj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem style="plain" id="9BB-ZY-qV5">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zfX-n2-li5">
+                        <rect key="frame" x="16" y="7" width="53" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Cancel"/>
+                        <connections>
+                            <action selector="cancelDatePicker:" destination="-1" eventType="touchUpInside" id="vlP-DI-Cve"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="3Ym-m0-K9K"/>
+                <barButtonItem style="plain" id="pcF-fn-5LA">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oui-w3-sJT">
+                        <rect key="frame" x="109" y="7" width="102" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Schedule Time"/>
+                    </button>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="tXM-ef-EPV"/>
+                <barButtonItem style="plain" id="9Pc-vf-Ti5">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Qv-qb-Cea">
+                        <rect key="frame" x="267" y="7" width="37" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Done"/>
+                        <connections>
+                            <action selector="doneDatePicker:" destination="-1" eventType="touchUpInside" id="Yrm-e9-1Gd"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="-146" y="303"/>
+        </toolbar>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="sfy-It-0UB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="467372549.12391001">
+                <!--2015-10-24 09:42:29 +0000-->
+            </date>
+        </datePicker>
+    </objects>
+    <resources>
+        <image name="appBg.png" width="320" height="568"/>
+    </resources>
+</document>
